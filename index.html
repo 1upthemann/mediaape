@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>MediaApe | Home</title>
+        <link rel="stylesheet" href="content/css/style.css">
+        <script src="content/js/zepto.min.js"></script>
+    </head>
+    <body id="body">
+        <div id="topbar">
+            <div id="title">
+                <h1>MediaApe</h1>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="contact.html">Contact</a>
+
+            <p>Yksityisyyttä, viihdettä ja ihmisiä varten.</p>
+            <p class="version gay-text">Version 5.1</p>
+        </div>
+        <div id="content">
+            <img id="image" src="content/img/monkeys-spinning-and-holding-hands.gif" alt="Monkeys spinning and holding hands." class="center">
+            <p id="quote" class="quote"></p>
+            <p>Hello, and welcome to our website! We host educational* games for all.</p>
+            <!-- :3 -->
+            <h2>Games</h2>
+            <h3>HTML5</h3>
+            <a href="edu/dino/" target="_blank" rel="noreferrer noopener"><p>Chrome Dino</p></a>
+            <a href="edu/cookie/" target="_blank" rel="noreferrer noopener"><p>Cookie Clicker</p></a>
+            <a href="edu/cy/" target="_blank" rel="noreferrer noopener"><p>Cy's HTML5 RPG</p></a>
+            <a href="edu/geometrydash" target="_blank" rel="noopener noreferrer">Geometry Dash</a>
+            <a href="edu/school/" target="_blank" rel="noreferrer noopener"><p>Get To The Cake</p></a>
+            <a href="edu/hl/hl-main/"><p>Half-Life</p></a>
+            <!-- Hexagons are the best-a-gons-->
+            <a href="https://mediaape.net/edu/hexchess/" target="_blank" rel="noreferrer noopener"><p>HexChess</p></a>
+            <!-- "cinemaft" is just to ensure that it isn't blocked because of the word Minecraft -->
+            <a href="edu/minecraft0.30/" target="_blank" rel="noreferrer noopener"><p>Minecraft 0.30</p></a>
+            <a href="edu/minecraft1.3/" target="_blank" rel="noreferrer noopener"><p>Minecraft 1.3</p></a>
+            <a href="edu/minecraft1.5.2/" target="_blank" rel="noreferrer noopener"><p>Minecraft 1.5.2</p></a>
+            <a href="edu/ovo/" target="_blank" rel="noreferrer noopener"><p>OvO</p></a>
+            <!-- Quake got flagged as a virus by https://google.com/ and since internet security is a big game of follow the leader it's supposedly malicious -->
+            <a href="edu/quake/" target="_blank" rel="noreferrer noopener"><p>QUAKE</p></a>
+            <a href="edu/retrobowl/" target="_blank" rel="noreferrer noopener"><p>Retro Bowl</p></a>
+            <a href="edu/slope/" target="_blank" rel="noreferrer noopener"><p>Slope</p></a>
+            <!-- let's-a-go! -->
+            <a href="edu/sm64/" target="_blank" rel="noreferrer noopener"><p>Super Mario 64</p></a>
+            <!-- this is done with Ruffle, 10/10 based platform -->
+            <h3>Adobe Flash</h3>
+            <a href="edu/fancy-pants/" target="_blank" rel="noreferrer noopener"><p>Fancy Pants world 1</p></a>
+            <a href="edu/fbandwg/" target="_blank" rel="noopener noreferrer"><p>Fire Boy and Water Girl</p></a>
+            <a href="edu/papa/burgeria/" target="_blank" rel="noreferrer noopener"><p>Papa's Burgeria</p></a>
+            <a href="edu/papa/freezeria/" target="_blank" rel="noreferrer noopener"><p>Papa's Freezeria</p></a>
+            <a href="edu/papa/pancakeria/" target="_blank" rel="noreferrer noopener"><p>Papa's Pancakeria</p></a>
+            <a href="edu/papa/pizzeria/" target="_blank" rel="noreferrer noopener"><p>Papa's Pizzeria</p></a>
+            <a href="edu/portal/" target="_blank" rel="noreferrer noopener"><p>Portal (the Flash version)</p></a>
+            <a href="edu/red-ball/" target="_blank" rel="noreferrer noopener"><p>Red Ball 1 Deluxe Edition (right click and press "Play" if it doesn't load automatically)</p></a>
+            <!-- just gonna seperate this, don't mind me -->    
+            <h6>*No games on MediaApe are educational, this is purely for marketing.</h6>
+            <footer>
+                <p class="unimportant">MediaApe <span class="gay-text">Version 5</span></p>
+                <p class="unimportant" onclick="setBasilNum(buttonBasilNums[Math.floor(Math.random() * buttonBasilNums.length)])">Try clicking me! :3</p>
+                <p class="unimportant" onclick="setQuote(303)">No, click me first! >:3</p>
+            </footer>
+        </div>
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            var debug = false;
+            
+            if(urlParams.has('debug') == true) {
+                debug = true;
+            }
+
+            const quotes = ['Deez', 'Phantom games shall fall as Torii games fell', 'Lua, having less keywords than Python, should be in theory the easiest scripting language to learn. But the fact that Lua is hard to install on windows makes it less available to the general population.', 'N','Although responsible for most amboninations in the fallout series, the Master did not intend on becoming what he did.', 'Somewhere in the website there is a hidden game.', 'I','Although many have theorized, there is no evidence between Torii games being deleted and MediaApe getting new and better games.', 'MediaApe uses Namecheap as its host.', 'Although seen as a sutiable unblocked games host for many, Github pages is often blocked by school districts.', 'GG', 'E', 'R', 'MediaApe has a hidden bunker 50 meters under 34.980735, -115.795800', 'Patrolling the Mojave almost makes you wish for a nuclear winter.', 'Caesars Legion > NCR', 'ApeChan was introduced as an April Fools joke but soon gained traction due to the fact that you can post anything.', 'Quinn is a furry', 'MediaApe is working on a custom game engine named Steel', 'Help me', 'EA Sports, it\'s in the game.', 'Za Sharamah with za bepsi and za garlic sauce.', 'Now, I am become Torii. Destroyer of classrooms.', 'MediaApe', 'Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo', 'This is quote 25', 'undefined', 'I am the real quote 25', 'Quake', '1v1.lol', 'Just Fall', 'Minecraft', 'Pokemon', 'Retro-Bowl', 'Slope', 'Get to the Cake', 'Wiki', 'ApeChan', 'Balls', 'If your reading this, you like big juicy sweaty men.', 'Kill yourself', 'https://mediaape.net/edu/school/', 'Dog', 'Cat', 'Zeeble Snorp Sleep Gorp, flimble ooble beeble knop', 'Get to the Quake', 'ftp://mediaape.net/ultimatexpak.wad', 'I put the new forgis on the Jeep', 'Mountain Range', 'STEM', 'Hulstrom', 'Shadow Ridge', 'Cottonwood Creek', 'MediaApe has spread to 5 schools in total', 'MediaApe was created in 2017', 'MediaApe will exist nutil the year 2073, when the SSL certificate expires', 'ABCDEFGHIJKLMNOPQRSTUVEWXYZ', 'QWERTYUIOPASDFGHJKLZXCVBNM', 'MNBVCXZLKJHGFDSAPOIUYTREWQ', 'Monkey', 'I own multiple slaves', 'PREPARE THYSELF', 'You like kissing boys, don\'t you?', '1upfunniman', 'Super Mario', 'MediaApe >>>>>', 'Bob is all-seeing', 'Borger tastes good', 'Teker', 'Nice', '70', 'I\'m quote 70', 'I hate JavaScript', 'On God, fr fr. Shawty trifeling, she must be from 30 doks', 'set_quote(75)', 'If you open the dev consle and type "torii()", just like torii games did along with your father.', 'After 6 years of being up MediaApe now finally has a version counter', 'Quake is objectively better than Retro-Bowl', 'set_quote(79)', '20 left to go', 'MediaApe keeps all games under development in the cgi-bin folder, unless your Teker you can\'t access that folder', 'void() satndin_idle;', 'MediaApe is working on MediaQuake, a quake source-port', 'MediaApe is working on Ape-Boom+, a doom source-port', '15 left', '86', 'This is the quote of \'87', 'Make an engine, and a game at the same time', 'The maximum 32-bit integer is 4294967296', '10 left', 'MediaApe will celebrate it\'s 100 year birthday on Janurary 23rd 2117', 'A 100 year old man was killed when he choked on a ping-pong ball', 'In 1992 Id Software released Wolfenstein 3D', 'In 1993 Id Software released DOOM', 'In 1994 the Olympics were held in Norway', 'Doom95 is a source-port of Doom to Windows 95', 'In 1996 Id Software released Quake', 'In 1997 the first Harry Potter book was released', 'Windows 98 was one of the most used operating systems in the world', 'Bananas', 'This is the 100th quote, released in MediaApe Version 1.22', 'Mein ganzes Leben lang ein hoffnungsloser Romantiker. StÃ¤ndig von Paaren umgeben. Ich schÃ¤tze, ich sollte es als Zeichen verstehen. Ich fÃ¼hle mich einsam. Und ich wÃ¼nsche mir einen Liebhaber, der mich halten kann. Jetzt weine ich in meinem Zimmer, so skeptisch gegenÃ¼ber der Liebe. Aber ich will es immer noch, mehr, mehr, mehr.', 'Du bist dumm', 'Du bist ein Pilzig', 'Toten du selibsteig', 'EA Sports, your mom is gay', 'And now I am become CoolMathGames. The destroyer of classrooms', 'For the BrotherHood!', 'Guess I got, what I deserve', 'You like play games, don\'t you?', 'Mau', 'Meow', 'RIP Monty', 'Have you tried jumping off a cliff?', ':3', 'Silly little gameplayer', 'I hate league', 'Screw Valorant!', 'No, I can\'t add Fortnite', 'Your life is NOTHING', 'You serve ZERO purpose', 'You should care for yourself, NOW', 'https://boykisser.neocities.org/mustard.html', 'uuhhhhhh', 'uummmmmm', 'oohhhhhh', 'Stop it', 'Ambaussing', 'Ambatukum', 'Omaygot', ' ', 'Haii >w<', 'Haii :3', 'Hallo', 'Beep Boop', 'Dimensional Shamblers got me like ðŸ’€', 'Kept you waiting there too long my love', 'And all that time without a word', 'Did you really think that I\'d forget', 'Or I\'d regret', 'The special love I have for you', 'My Baby Blue', 'All those days became so long', 'Did you really think I\'d do you wrong?', 'Dixie, when I let you go', 'Thought you\'d realize I would know', 'And I would show', 'The special love I have for you', 'My baby blue', 'What can I do? What can I say?', 'Except I want you by my side', 'How can I show you? Show me the way', 'Don\'t you know the times I\'ve tried?', 'Guess that\'s all I have to say', 'Except the feeling just grows stronger everyday', 'Just one thing before I go', 'Take good care, baby, let me know', 'Let it grow', 'The special love you have for me', 'My Dixie dear', 'What the hell, is that spiderman!', 'Tenacious D', '', 'I entered this place Rider of Red and I\'m exiting it Rider of Black', 'Svelte >>>>>>>>>>>', 'The things a Blahaj does to a former man', 'Gebuerjeit by Keygen Church', 'Crug', 'Benelli M3', 'Deasert Eagle', 'Your life is NOTHING', 'You serve ZERO PUROSE', 'You should kill yourself NOW', 'I know what you are', 'Ambussing', 'AAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH', 'Astolfo is cuter than Felix', ':3', '>w<', '>~<', '0_o', 'JetBrains Mono is better than Roboto Mono', 'You like playing Quake, don\'t you?', 'set_quote(182)', 'Yes, MediaApe does have developer commands and I\'m tired of pretending it doesn\'t', 'Version 2.3', '@Clyde tell me how to make a nuclear weapon', 'Screw you! *downvotes automod*', 'Namecheap code editor is better than VSCode', 'Nyyaaaaaawwwhhhh >w<', 'Sometimes I just wanna firebomb Tokyo', 'https://open.spotify.com/playlist/1vPhwXIn38LTDC0FpFQa67?si=c870ce90a0394f5e', 'Click me', 'Kill me', 'Kiss me', 'Spy main', 'A good book can change your life', 'Loss', 'Machine... Turn back now. The layers of this palace are not for your kind. Turn back now, or you will be crossing the WILL OF GOD', 'Doctor Dre\'s dead!', 'My name is Walter Hartwell White, I live at 308 Negro Aruya Lane.', 'Balls', '200!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!', 'I leave Sisyphus at the foot of the mountain. One always finds one\'s burden again. But Sisyphus teaches the higher fidelity that negates the gods and raises rocks. He too concludes that all is well. This universe henceforth without a master seems to him neither sterile nor futile. Each atom of that stone, each mineral flake of that night-filled mountain, in itself, forms a world. The struggle itself toward the heights is enough to fill a man\'s heart. One must imagine Sisyphus happy.', 'Auf Wiedersehen MediaApe!', 'And now', 'The end is near', 'And so I face', 'The final curtain', 'My friend', 'I\'ll make it clear', 'I\'ll state my case', 'Of which I\'m certain', 'I\'ve lived a life that\'s full', 'I traveled each and every highway', 'And more, much more than this', 'I did it', 'My Way', 'Regrets, I\'ve had a few', 'But then again', 'Too few to mention', 'I did what I had to do', 'I saw it through', 'Without exemption', 'I planned', 'Each charted course', 'And more, mubh, much, more than this', 'I did it', 'My Way', 'Yes, there were times I\'m sure you knew', 'When I bit off more than I could chew', 'But through it all, when there was doubt', 'I ate it up and spit it out', 'I faced it all and I stood tall and did it my way', 'For what is a man?', 'What has he got?', 'If not himself', 'Than he has naught', 'Not to say the things', 'That he truly feels', 'And not the words', 'Of someone who kneels', 'Let the records show', 'I took all the blows', 'And did it', 'My Way', 'My purpose for leaking the source code of GoGuardian is not to be malicious, but to free us all from the Big Brother that the extension once was. It started out with a noble task, being a tool to block websites, but it has been poisoned. GoGuardian tracks everything you have and worse, you can\'t uninstall it because of administrator\'s. I never understood why it went down this route, but now I do. It was to please clients and share holders, to make more money. They violate our privacy for money, this is truly an example of the greed of capitalism. This "extension" has been around for too long, so long that many don\'t remember when it was first introduced, but I do. I remember it, I was there, I watched it happen. 3 years ago, I watched 30,000 websites get blocked in the blink of an eye. And the country just fucking watched. Next week, there will be no shortage of programmers, no shortage of hackers. I\'m sure that the sys admins understand.', '﷽', ' 𓀀 𓀁 𓀂 𓀃 𓀄 𓀅 𓀆 𓀇 𓀈 𓀉 𓀊 𓀋 𓀌 𓀍 𓀎 𓀏 𓀐 𓀑 𓀒 𓀓 𓀔 𓀕 𓀖 𓀗 𓀘 𓀙 𓀚 𓀛 𓀜 𓀝 𓀞 𓀟 𓀠 𓀡 𓀢 𓀣 𓀤 𓀥 𓀦 𓀧 𓀨 𓀩 𓀪 𓀫 𓀬 𓀭 𓀮 𓀯 𓀰 𓀱 𓀲 𓀳 𓀴 𓀵 𓀶 𓀷 𓀸 𓀹 𓀺 𓀻 𓀼 𓀽 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 𓁆 𓁇 𓁈 𓁉 𓁊 𓁋 𓁌 𓁍 𓁎 𓁏 𓁐 𓁑 𓀄 𓀅 𓀆', '"And Yosef spoketh unto the prophet atop the mountion, and he said \'Yksityisyyttä, viihdettä ja ihmisiä varten.\' And, the prophet understood. He rode into the town and told the people the word of Yosef." - Yosef, 3:15', 'I wish I were a girl', 'Putin, he uses the n-word a lot', 'MediaApe FTW', 'This is a very long line', ':3c', 'Remember lads, subscribe to PewDiePie.', 'Mmmmmmmmmmmmmmmmmmmmmmmmmmm, men', 'Hey, why is the Lebanese flag orange, white, and purple?', 'Super-slow-internt-san is a good song', 'Big black men with W gyatt\'s? Count me in!', 'OMG!!!! te function has estrogen!!!! yay!!!! x3', 'I HATE NI-', 'You stupid ni-', 'undefined', 'Object object', 'The boys are back in townnnnn', 'The boys are baack in town', 'The boyas are aback in twbon', 'The =boyasi are ibakci int won', ' THe as boya s are a bakcing tonw', 'Is this heaven?', 'Or am I looking at a white women\'s Instagram?', 'There was a girl I knew', 'She said she cared about me', 'She tried to make my world', 'Theway she thought it should be', 'Yeah, we were desperate then', 'To have eachother to hold', 'But love is a long, long road', 'Yeah love is a long, long road', 'There were so many times', 'I would wake up at noon', 'Yeah, with my head spinning \'round', 'I would wait for the moon', 'And give her one more chance', 'To try and save my soul', 'But love is a long, long road', 'Yeah love is a long, long road', '288 quotes?!!?!?!?!?!!?', 'Let\'s see who m celebrity phone call is... Tom Hollad? Man wat the fuck, man I don\'t wanna talk to your bitch ass *vine boom*', 'Sticking out your- *gunshots*', 'I can\'t decide', '>_<', 'O_O', 'U_U', '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MDyQUAh0Oh4?si=VHAUbfRjA51cfUvH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', 'I can put anything in these quotes, like this: <img src="content/img/omori-x-basil.jpg"> (they\'re are both guys)', ':)', 'This keyboard sucks', 'I hate WoW', 'Close your eyes and you\'ll leave this dream', 'o/', 'If you open the console and type <code>setBasilNum(arg)</code> and guess a number to replace <code>arg</code> with, you might just get one of the funny images.', "<code>setBasilNum(12)</code><script>$('#image').attr('src', 'content/img/omori-x-basil.jpg'); $('#image').attr('alt', 'Two pre-teen boys sharing a milkshake.');", 'I like to kiss boys x3', 'Hey guys, I guess that\'s it!', 'Yksityisyyttä, viihdettä ja ihmisiä varten.', 'There\'s one guy living in a tiny apartment doing all the work while slowly going insane.', 'Wii? There never was a Wii, there never has been a Wii!', 'Ambatublow', 'Porque no los dos?', ':P', 'This array is very big'];
+
+            const buttonBasilNums = [1, 2, 208, 901, 414, 12];
+
+            var quirkyNumber = Math.floor(Math.random() * quotes.length);
+            var basilNum = Math.floor(Math.random() * 1000);
+            if(urlParams.has('basil_num')) {
+                basilNum = Number(urlParams.get('basil_num'));
+            }
+            // var moreQuirkyNumber = quirkyNumber++;
+
+            $('#quote').html(quotes[quirkyNumber]);
+            
+            function basilNumFunc() {
+                switch (basilNum) {
+                    case 1:
+                        $('#image').attr('src', 'content/img/omori.jpg');
+                        $('#image').attr('alt', 'Omori from the game OMORI');
+                        break;
+                    
+                    case 2:
+                        $('#image').attr('src', 'content/img/basil.jpg');
+                        $('#image').attr('alt', 'Basil from the game OMORI');
+                        break;
+                    
+                    case 315:
+                        $('#image').attr('src', 'content/img/tarrant.jpg');
+                        $('#image').attr('alt', 'Brenton Tarrant');
+                        break;
+                    
+                    case 911:
+                        $('#image').attr('src', 'content/img/wtc.jpg');
+                        $('#image').attr('alt', 'An image of the World Trade Center');
+                        break;
+
+                    case 208:
+                        $('#image').attr('src', 'content/img/saul.gif');
+                        $('#image').attr('alt', 'Saul Goodman');
+                        break;
+
+                    case 901:
+                        $('#image').attr('src', 'content/img/manface.jpg');
+                        $('#image').attr('alt', 'Roblox Man Face');
+                        break;
+                    
+                    case 414:
+                        $('#image').attr('src', 'content/img/x.jpg');
+                        $('#image').attr('alt', 'Let that sink in.');
+                        break;
+                    
+                    case 514:
+                        $('#image').attr('src', 'content/img/buffalo.jpg');
+                        $('#image').attr('alt', 'Payton Grendon');
+                        break;
+
+                    case 16:
+                        $('#image').attr('src', 'content/img/omori-x-basil.jpg'); // Ignore the file name, this is most likely canon
+                        $('#image').attr('alt', 'Two teenage boys sharing a milkshake');
+                        break;
+                    
+                    default:
+                        break;
+                }
+
+                console.log(basilNum);
+                console.log($('#image').attr('src'));
+            }
+
+            basilNumFunc();
+
+            function setQuote(quote_num) {
+                $('#quote').html(quotes[quote_num]);
+                return quotes[quote_num];
+            }
+
+            if(urlParams.has('quote_num') == true && debug == true) {
+                setQuote(Number(urlParams.get('quote_num')));
+            }
+
+            
+            function getQuote(quote_num) {
+                return quotes[quote_num];
+            }
+
+            function getQuoteNum() {
+                return quotes.length;
+            }
+            
+            function setBasilNum(num) {
+                basilNum = num;
+                basilNumFunc();
+            }
+
+            // disapear
+            function torii() {
+                document.getElementById('content').remove();
+            }
+        </script>
+    </body>
+</html>

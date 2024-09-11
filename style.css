@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('./gay.css');
+
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    text-decoration-style: solid !important;
+    text-decoration-color: inherit !important;
+    text-decoration-thickness: auto !important;
+    color: #e696ef;
+}
+
+footer {
+    text-align: center;
+}
+
+code {
+    color: #e696ef;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #0f0f0f;
+}
+
+.unimportant {
+    font-size: 8pt;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.version {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 13.5pt;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+}
+
+#title {
+    font-size: 18pt;
+    color: #e696ef;
+}
+
+#content {
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 13.5pt;
+}
+
+#topbar {
+    background-color: #0f0f0f;
+    overflow: hidden;
+}
+
+#topbar a {
+    color: #ffffff;
+    font-size: 18pt;
+    padding: 8px;
+}
+
+#heading {
+    font-size: 13pt;
+}
+
+#subtitle {
+    font-style: italic;
+    font-size: 11;
+}
